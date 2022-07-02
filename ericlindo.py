@@ -94,4 +94,5 @@ for i in range(n):
         print(f'{aT_vezes[i][j] + BsT[i][j]:^5}', end=' ')
         c += 1
     print()
+    
 
