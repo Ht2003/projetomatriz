@@ -65,7 +65,7 @@ for i in range(n):
         aT_vezes[i][j] = np.dot(aT_vezes, x)[i][j]
         c += 1
     print()
-
+  
 print('MATRIZ B<TS>')
 BsT = []
 for i in range(n):
@@ -74,14 +74,11 @@ for i in range(n):
 for x in range(0, n):
     for y in range(x, n):
         BsT[x][y] = matrizB[x][y]
-
-
+ 
 for x in range(0, n):
     for y in range(0, n):
         print(f'{BsT[x][y]:^5}', end=' ')
     print()
-
-
 print('MATRIZ C')
 c = 0
 matrizC = []
@@ -94,5 +91,3 @@ for i in range(n):
         print(f'{aT_vezes[i][j] + BsT[i][j]:^5}', end=' ')
         c += 1
     print()
-    
-
